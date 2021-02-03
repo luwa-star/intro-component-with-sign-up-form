@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(0, 100%, 74%);
+    color: #fff;
+}
+
+.container {
+    padding: 4rem 0.5rem;
+    background: url(./images/bg-intro-mobile.png) no-repeat;
+    background-position: center;
+}
+
+.heading {
+    padding: 0rem 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content {
+    margin: 2rem 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 2rem 1rem;
+}
+
+.pricing-wrapper {
+    width: 100%;
+    height: 4.5rem;
+    background: hsl(248, 32%, 49%);
+    border-radius: 6px;
+    box-shadow: 0 10px 5px hsla(249, 10%, 26%, 0.6);
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-info {
+    text-align: center;
+}
+
+.pricing-info .span-pricing {
+    font-weight: 600;
+}
+
+.form {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    box-shadow: 0 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.form-control {
+    color: hsl(249, 10%, 26%);
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+
+.form-control input {
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.form-control input:hover,
+.form-control input:active,
+.form-control input:focus {
+    border: 1px solid hsla(248, 32%, 49%, 0.7);
+    outline: none;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+    font-size: inherit;
+}
+
+.form-control img {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.65rem;
+    visibility: hidden;
+}
+
+.form-control small {
+    display: block;
+    visibility: hidden;
+}
+
+.form-control.error input {
+    border: 1px solid #d11a1a;
+}
+
+.form-control.error img {
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #d11a1a;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+button {
+    height: 3.5rem;
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 3px solid hsl(154, 48%, 45%);
+    border-radius: 6px;
+    padding: 0.8rem 0.5rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:active,
+button:focus {
+    background-color: hsla(154, 59%, 51%, 0.7);
+    border: none;
+    outline: none;
+}
+
+.form-footer-wrapper {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.footer-note {
+    color: hsl(246, 25%, 77%);
+}
+
+.footer-note a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.footer-note a:hover,
+.footer-note a:active,
+.footer-note a:focus {
+    color: hsl(0, 84%, 48%);
+    text-decoration: underline;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*Media Queries*/
+
+@media only screen and (min-width: 540px) {
+    .container {
+        padding: 6rem;
+    }
+    .heading {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 2rem 1.5rem;
+        background: url(./images/bg-intro-desktop.png) no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-wrapper {
+        padding: 3rem 2rem;
+        margin-top: 2rem;
+    }
+    .heading,
+    .content {
+        text-align: left;
+    }
+    .heading {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading {
+        font-size: 2.4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .intro-wrapper {
+        padding: 3rem;
+    }
+    .heading {
+        font-size: 2.8em;
+    }
+    .form-wrapper {
+        margin: 2rem;
+    }
+    .pricing-wrapper {
+        justify-content: center;
+    }
+}
